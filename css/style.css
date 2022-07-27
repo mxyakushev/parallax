@@ -1,0 +1,103 @@
+/* MAIN STYLES */
+
+html {
+    overflow: hidden;
+}
+
+body {
+    perspective: 2px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+.wrapper {
+    transform-style: inherit;
+}
+
+
+/* PAGE STYLES */
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: inherit;
+    width: 100vw;
+    transform-origin: center;
+}
+
+.page::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    transform-origin: center;
+    transform: translateZ(1px) scale(1.5);
+    color: #fff;
+}
+
+.page::after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.601);
+}
+
+
+/* BURGER PAGE STYLES*/
+
+.burger-page {
+    background: url('../img/burger.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.burger-page::before {
+    content: 'BURGER';
+}
+
+
+/* PIZZA PAGE STYLES*/
+
+.pizza-page { 
+    background: url('../img/pizza.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.pizza-page::before {
+    content: 'PIZZA';
+}
+
+
+/* TACOS PAGE STYLES*/
+
+.tacos-page {
+    background: url('../img/tacos.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.tacos-page::before {
+    content: 'TACOS';
+}
+
+
+/* SANDWICH PAGE STYLES*/
+
+.sandwich-page {
+    background: url('../img/sandwich.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.sandwich-page::before {
+    content: 'SANDWICH';
+}
+
+
